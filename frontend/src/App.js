@@ -192,14 +192,14 @@ function App() {
   };
 
   const currency = (n) =>
-    typeof n === "number" ? n.toFixed(2) : Number(n || 0).toFixed(2);
+    typeof n === "number" ? `₹${n.toFixed(2)}` : `₹${Number(n || 0).toFixed(2)}`;
 
   return (
     <div className="app-bg">
       <header className="topbar">
         <div className="brand">
-          <span className="brand-badge">📦</span>
-          <h1>Telusko Trac</h1>
+          <span className="brand-badge">📊</span>
+          <h1>StockFlow</h1>
         </div>
         <div className="top-actions">
           <button className="btn btn-light" onClick={fetchProducts} disabled={loading}>
@@ -335,7 +335,7 @@ function App() {
                         <td>{p.id}</td>
                         <td className="name-cell">{p.name}</td>
                         <td className="desc-cell" title={p.description}>{p.description}</td>
-                        <td className="price-cell">${currency(p.price)}</td>
+                        <td className="price-cell">{currency(p.price)}</td>
                         <td>
                           <span className="qty-badge">{p.quantity}</span>
                         </td>

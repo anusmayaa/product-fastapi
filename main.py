@@ -1,16 +1,24 @@
 from fastapi import FastAPI,Depends
+from fastapi.middleware.cors import CORSMiddleware
 from models import Product
 from database import session,engine
 import database_models
 from sqlalchemy.orm import Session
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware, 
+    allow_origins=["http://localhost:3000"] ,
+    allow_methods=["*"]
+    
+    
+)
 
 database_models.Base.metadata.create_all(bind=engine)
 
-@app.get("/")
-def greet():
-    return "Hello world"
+# @app.get("/")
+# def greet():
+#     return "Hello world"
 
 # list of products with 4 products like phones, laptops, pens, tables
 products = [
@@ -57,7 +65,7 @@ def create_product(product: Product,db:Session=Depends(get_db)):
     db.commit()
     return product
     
-@app.put("/product")
+@app.put("/products/{id}")
 def update_product(id:int,product:Product,db:Session=Depends(get_db)):
     db_product=db.query(database_models.Product).filter(database_models.Product.id==id).first()
     if db_product:
@@ -70,7 +78,7 @@ def update_product(id:int,product:Product,db:Session=Depends(get_db)):
     else:
         return "Product not found"
 
-@app.delete("/product")
+@app.delete("/products/{id}")
 def delete_product(id:int,db:Session=Depends(get_db)):
     db_product=db.query(database_models.Product).filter(database_models.Product.id==id).first()
     if db_product:

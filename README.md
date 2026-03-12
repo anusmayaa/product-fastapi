@@ -14,8 +14,6 @@ A modern, full-stack inventory management application built with **FastAPI** (Py
 - 📝 **Update Products** - Edit existing product details
 - 🗑️ **Delete Products** - Remove products from inventory
 - 🔍 **Search** - Filter products by ID, name, or description
-- 🔄 **Sort** - Sort products by any column (ID, name, price, quantity)
-- 💰 **Indian Rupee (₹)** - Currency displayed in INR
 - 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
 
 ## 🛠️ Tech Stack
@@ -153,7 +151,6 @@ POST /products/
 - **Gradient Backgrounds** - Modern visual appeal
 - **Hover Effects** - Interactive table rows and buttons
 - **Feature Pills** - ⚡ Fast, 🔒 Secure, 🎯 Reliable
-- **Sortable Columns** - Click column headers to sort
 - **Real-time Search** - Instant filtering as you type
 
 ## 🔒 CORS Configuration

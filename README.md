@@ -1,4 +1,4 @@
-# 📊 StockFlow - Product Inventory Management System
+# StockFlow - Product Inventory Management System
 
 A modern, full-stack inventory management application built with **FastAPI** (Python) and **React**. StockFlow provides a clean and intuitive interface for managing product inventory with CRUD operations, search, and sorting capabilities.
 
@@ -7,16 +7,16 @@ A modern, full-stack inventory management application built with **FastAPI** (Py
 ![React](https://img.shields.io/badge/React-18.2+-blue)
 ![Python](https://img.shields.io/badge/Python-3.8+-yellow)
 
-## ✨ Features
+## Features
 
-- 🎨 **Beautiful UI** - Soft powder blue theme that's easy on the eyes
-- ➕ **Create Products** - Add new products with ID, name, description, price, and quantity
-- 📝 **Update Products** - Edit existing product details
-- 🗑️ **Delete Products** - Remove products from inventory
-- 🔍 **Search** - Filter products by ID, name, or description
-- 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
+- **Beautiful UI** - Soft powder blue theme that's easy on the eyes
+- **Create Products** - Add new products with ID, name, description, price, and quantity
+- **Update Products** - Edit existing product details
+- **Delete Products** - Remove products from inventory
+- **Search** - Filter products by ID, name, or description
+- **Responsive Design** - Works seamlessly on desktop and mobile devices
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **FastAPI** - Modern, fast Python web framework
@@ -30,14 +30,14 @@ A modern, full-stack inventory management application built with **FastAPI** (Py
 - **Axios** - HTTP client for API requests
 - **CSS3** - Modern styling with gradients and animations
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - Node.js 14 or higher
 - PostgreSQL or MySQL database
 - Git
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
@@ -98,7 +98,7 @@ npm start
 ```
 Frontend will run on `http://localhost:3000`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fastapi-project/
@@ -121,7 +121,7 @@ fastapi-project/
 └── README.md
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -145,15 +145,15 @@ POST /products/
 }
 ```
 
-## 🎨 UI Features
+## UI Features
 
 - **Powder Blue Theme** - Calming, professional color scheme
 - **Gradient Backgrounds** - Modern visual appeal
 - **Hover Effects** - Interactive table rows and buttons
-- **Feature Pills** - ⚡ Fast, 🔒 Secure, 🎯 Reliable
+- **Feature Pills** - Fast, Secure, Reliable
 - **Real-time Search** - Instant filtering as you type
 
-## 🔒 CORS Configuration
+## CORS Configuration
 
 The backend is configured to accept requests from `http://localhost:3000`. To modify this, update the CORS middleware in `main.py`:
 
@@ -164,7 +164,7 @@ app.add_middleware(
 )
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 1. Fork the repository
@@ -173,16 +173,16 @@ Contributions are welcome! Feel free to:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👤 Author
+## Author
 
 **Anusmaya**
 - GitHub: [@anusmayaa](https://github.com/anusmayaa)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - FastAPI documentation
 - React documentation
@@ -190,4 +190,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-⭐ If you found this project helpful, please give it a star!
+If you found this project helpful, please give it a star!
